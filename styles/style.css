@@ -1,0 +1,111 @@
+.container {
+    width: 1200px;
+    margin: 0 auto ;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.btn {
+    min-width: 200px;
+    padding: 10px 15px;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background-color: #DB2512;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: backgroung-color .2s ease;
+}
+.btn:hover {
+    background-color: #dc311f;
+}
+/* header start */
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-wrapper {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-block {
+    width: 20%;
+}
+.nav {
+    display: flex;
+}
+.nav-link {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    margin-right: 35px;
+    position: relative;
+}
+.nav-link:after {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content:'';
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+.nav-link.active::after {
+    opacity: 1;
+}
+.nav-link:hover:after {
+    opacity: 1;
+}
+.nav-link :last-child {
+    margin-right: 0;
+}
+.header-lang {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.header-lang-link {
+    margin-right: 8px;
+    color: #B7B7B7;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.header-lang-link :last-child {
+    margin-right: 0;
+}
+.header-lang-link.active{
+    color: white;
+}
+/* header end */
+/* Intro start */
+.intro {
+    background: url('../images/intro-bg.jpg');
+    position: relative;
+}
+.intro::after {
+
+}
+.intro-block {
+    height: 750px;
+    display: flex;
+    align-items: center;
+}
+.intro-title {
+    max-width: 790px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.5;
+    display: inline;
+}
+/* Intro end */
