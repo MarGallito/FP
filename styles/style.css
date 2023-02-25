@@ -132,6 +132,7 @@ body {
     color: #fff;
     line-height: 1.5;
     display: inline;
+    text-transform: uppercase;
 }
 /* Intro end */
 .section {
@@ -164,7 +165,7 @@ body {
     margin-bottom: 10px;
     font-size: 18px;
     letter-spacing: 0.15em;
-
+    text-transform: uppercase;
 }
 .info-txt {
     color: #B7B7B7;
@@ -176,6 +177,7 @@ body {
     font-size: 30px;
     margin-bottom: 15px;
     letter-spacing: 0.15em;
+    text-transform: uppercase;
 }
 .block-link {
     display: inline-block;
@@ -185,7 +187,7 @@ body {
     position: relative;
 	cursor: pointer;
 	line-height: 1;
-    
+    text-transform: uppercase;
 }
 .block-link:after {
 	display: block;
@@ -239,6 +241,7 @@ body {
     height: 100%;
     opacity: 0;
     z-index: 2;
+    transition: opacity .2s ease;
 }
 .services-img {
     width: 100px;
@@ -252,6 +255,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2  ;
 }
 .services-txt {
     max-width: 270px;
@@ -262,10 +266,16 @@ body {
     position: absolute;
     bottom: 20px;
     left: 30px;
+    text-transform: uppercase;
 }
 .services-title {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.23em;
+    color: #000;
+    text-transform: uppercase;
 }
 /* Services end */
+/* About start */
+
+/* About end */
