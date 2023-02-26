@@ -1,5 +1,7 @@
 .container {
-    width: 1200px;
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
     margin: 0 auto ;
 }
 body {
@@ -428,6 +430,29 @@ body {
     transform: translateY(-15px);
     font-size: 12px;
 }
-
 /* Contacts end */
+/* Footer start */
+.footer-wrapper {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copyright {
+    letter-spacing: 0.15em;
+}
+.footer-soc {
+    display: flex;
+}
+.footer-soc-link {
+    margin-right: 20px;
+    text-decoration: none;
+}
+.footer-soc-link :last-child {
+    margin-right: 0;
+}
+.footer-soc-link img {
+    height: 25px;
+}
+/* Footer end */
 
