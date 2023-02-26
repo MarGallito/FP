@@ -1,0 +1,9 @@
+@media (max-width:1260px) {
+    .info-title {
+        font-size: 16px;
+    }
+    .info-txt {
+        font-size: 14px;
+    }
+
+}

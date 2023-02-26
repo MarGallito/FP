@@ -20,6 +20,7 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
     transition: backgroung-color .2s ease;
     cursor: pointer;
     outline: 0;
@@ -60,6 +61,7 @@ body {
     font-weight: 600;
     margin-right: 35px;
     position: relative;
+    text-decoration: none;
 }
 .nav-link:after {
     width: 100%;
@@ -91,6 +93,7 @@ body {
     color: #B7B7B7;
     font-weight: 600;
     text-transform: uppercase;
+    text-decoration: none;
     transition: color .2s ease;
 }
 .header-lang-link:hover {
@@ -199,6 +202,7 @@ body {
 	cursor: pointer;
 	line-height: 1;
     text-transform: uppercase;
+    text-decoration: none;
 }
 .block-link:after {
 	display: block;
@@ -218,6 +222,9 @@ body {
 }
 /* BLock end */
 /* Services start */
+.services-item {
+    text-decoration: none;
+}
 .services-item:hover .services-content-item {
     opacity: 1;
 }
@@ -310,6 +317,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.15em;
     text-decoration: underline;
+    text-decoration: none;
 }
 .about-link:hover {
     text-decoration: none;
