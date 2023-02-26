@@ -317,7 +317,6 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.15em;
     text-decoration: underline;
-    text-decoration: none;
 }
 .about-link:hover {
     text-decoration: none;
