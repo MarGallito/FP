@@ -19,6 +19,9 @@ body {
     align-items: center;
     justify-content: center;
     transition: backgroung-color .2s ease;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
 }
 .btn:hover {
     background-color: #dc311f;
@@ -149,6 +152,9 @@ body {
 .block {
     width: 33.33%;
     padding: 0 10px;
+}
+.text-upper {
+    text-transform: uppercase;
 }
 .info-item {
     background-color: #fff;
@@ -341,5 +347,87 @@ body {
 .process {
     padding-top: 50px;
 }
+.process-item {
+    padding: 30px 30px 15px;
+    height: 100%;
+    min-height: 150px;
+    background: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+
+}
 /* Progress end */
+/* Contacts start */
+.contacts {
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: #171616;
+    
+}
+.contacts .block-title {
+    margin-bottom: 40px;
+}
+.contacts-form {
+    max-width: 440px;
+}
+.form-row {
+    margin: 0 -20px;
+    display: flex;
+}
+.form-group {
+    padding: 0 20px;
+    margin-bottom: 30px;
+    flex: 1;
+    position: relative;
+}
+.input {
+    width: 100%;
+    padding: 9px 0;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+}
+.input:focus + .label {
+    transform: translateY(-15px);
+    font-size: 12px;
+}
+.input:not(:placeholder-shown) + .label {
+    transform: translateY(-15px);
+    font-size: 12px;
+}
+.label {
+    letter-spacing: 0.15em;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    pointer-events: none;
+    transition: transform .2s ease;
+}
+.textarea {
+    min-height: 130px;
+    width: 100%;
+    padding: 9px 0;
+    resize: vertical;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+}
+.textarea:focus + .label {
+    transform: translateY(-15px);
+    font-size: 12px;
+}
+.textarea:not(:placeholder-shown) + .label {
+    transform: translateY(-15px);
+    font-size: 12px;
+}
+
+/* Contacts end */
 
