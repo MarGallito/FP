@@ -78,6 +78,9 @@ body {
     display: -ms-flexbox;
     display: flex;
 }
+.header-menu-list li {
+    display: inline;
+}
 .nav-link {
     text-transform: uppercase;
     color: #fff;
@@ -99,15 +102,54 @@ body {
     -o-transition: opacity .2s ease;
     transition: opacity .2s ease;
 }
-.nav-link.active::after {
-    opacity: 1;
-}
 .nav-link:hover:after {
     opacity: 1;
 }
 .nav-link :last-child {
     margin-right: 0;
 }
+.menu-icon {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+}
+.menu-icon span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    left: 5px;
+    transition: transform .5s, opacity .5s, background-color .5s;
+}
+.header__burger-btn span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.header__burger-btn span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+.header.open .header__burger-btn span {
+    background-color: white;
+}
+
+.header.open .header__burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .header__burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .header__burger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+
 .header-lang {
     display: -webkit-box;
     display: -ms-flexbox;
