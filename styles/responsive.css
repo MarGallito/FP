@@ -99,6 +99,7 @@
     }
     .info-item {
         text-align: center;
+        margin-right: 40px;
     }
     .wrapper {
         flex-wrap: wrap;
