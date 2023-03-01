@@ -15,6 +15,11 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
 }
+.body-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
 .btn {
     min-width: 200px;
     padding: 10px 15px;
@@ -45,6 +50,13 @@ body {
     background-color: #dc311f;
 }
 /* header start */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .header {
     width: 100%;
     position: absolute;
@@ -77,6 +89,45 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: flex-end;
+}
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 135px;
+}
+.menu-item:not(:last-child) {
+    margin-right: 20px;
+}
+.menu-btn {
+    display: none;
+	width: 30px;
+	height: 30px;
+	position: relative;
+    border: none;
+    outline: none;
+	z-index:2;
+	overflow: hidden;
+    background-color: aqua;
+}
+.menu-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	transition: all 0.5s;
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
 }
 .nav-link {
     text-transform: uppercase;
