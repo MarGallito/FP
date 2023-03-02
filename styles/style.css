@@ -70,11 +70,11 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .header-block {
     width: 20%;
@@ -104,14 +104,22 @@ body {
 }
 .menu-btn {
     display: none;
-	width: 40px;
-	height: 40px;
-	position: relative;
+    width: 40px;
+    height: 40px;
+    position: relative;
     border: none;
     outline: none;
-	z-index:2;
-	overflow: hidden;
-    background-color: aqua;
+    z-index:2;
+    overflow: hidden;
+    background-color: #DB2512;
+    transition: background-color .2s ease ;
+    -webkit-transition: background-color .2s ease ;
+    -moz-transition: background-color .2s ease ;
+    -ms-transition: background-color .2s ease ;
+    -o-transition: background-color .2s ease ;
+}
+.menu-btn:hover {
+    background-color: #dc311f;
 }
 .menu-btn span {
 	width: 30px;
