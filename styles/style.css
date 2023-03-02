@@ -104,8 +104,8 @@ body {
 }
 .menu-btn {
     display: none;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	position: relative;
     border: none;
     outline: none;
@@ -115,19 +115,35 @@ body {
 }
 .menu-btn span {
 	width: 30px;
-	height: 2px;
+	height: 3px;
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 5px;
 	transform: translate(-50%, -50%);
 	background-color: white;
-	transition: all 0.5s;
+	transition: transform .5s, opacity .5s, background-color .5s;
+	-webkit-transition: transform .5s, opacity .5s, background-color .5s;
+	-moz-transition: transform .5s, opacity .5s, background-color .5s;
+	-ms-transition: transform .5s, opacity .5s, background-color .5s;
+	-o-transition: transform .5s, opacity .5s, background-color .5s;
 }
-.menu-btn span:nth-of-type(2) {
-	top: calc(50% - 5px);
+
+.header.open .menu-btn span:nth-child(1) {
+    transform: translateY(0)  rotate(45deg);
+    -webkit-transform: translateY(0)  rotate(45deg);
+    -moz-transform: translateY(0)  rotate(45deg);
+    -ms-transform: translateY(0)  rotate(45deg);
+    -o-transform: translateY(0)  rotate(45deg);
 }
-.menu-btn span:nth-of-type(3) {
-	top: calc(50% + 5px);
+.header.open .menu-btn span:nth-child(2) {
+    opacity: 0;
+}
+.header.open .menu-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+    -webkit-transform: translateY(0) rotate(-45deg);
+    -moz-transform: translateY(0) rotate(-45deg);
+    -ms-transform: translateY(0) rotate(-45deg);
+    -o-transform: translateY(0) rotate(-45deg);
 }
 .nav-link {
     text-transform: uppercase;

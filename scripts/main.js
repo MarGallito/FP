@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function() {
+	document.getElementById("burgerBar").addEventListener("click", function() {
+		document.querySelector("header").classList.toggle("open")
+	})
+}) 
 // smoothly scroll
 const anchors = document.querySelectorAll('a[href*="#"]');
 
