@@ -15,7 +15,7 @@ anchors.forEach(anchor => {
 
 		document.getElementById(blockID).scrollIntoView({
 			behavior: 'smooth',
-			block: 'start'
+			block: 'start
 		})
 	})
 })
